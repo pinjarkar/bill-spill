@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&family=Inter:wght@400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,700;0,900;1,100;1,200&family=Ubuntu:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ef61b84271.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Bill spill</title>
+</head>
+
+<body>
+    <div class="head">
+        <h1>BILL</h1>
+        <h1>SPILL</h1>
+    </div>
+    <div class="container">
+        <div class="left-container">
+            <div class="bill">
+                <label for="">Bill</label>
+                <input type="text" id="bill-amount" placeholder="0" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))" />
+                <i class="fa-solid fa-indian-rupee-sign"></i>
+
+            </div>
+
+            <div class="select-tip">
+                <label>Select Tip %</label>
+                <div>
+                    <button class="tip-button" value=5>5%</button>
+                    <button class="tip-button" value=10>10%</button>
+                    <button class="tip-button" value=15>15%</button>
+                    <button class="tip-button" value=25>25%</button>
+                    <button class="tip-button" value=50>50%</button>
+                    <button class="tip-button" value=75>75%</button>
+                </div>
+            </div>
+            <div class="num-people">
+                <label>Number of people</label>
+                <div class="num-div">
+                    <div>
+                        <button class="btn add-people">+</button>
+                        <div class="people">0</div>
+                        <button class="btn remove-people">-</button></div>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+            </div>
+        </div>
+        <div class="right-container">
+            <div class="right-div">
+                <div>
+                    <label class="label1">Tip Amount <p>/ person</p></label>
+                    <div class="tip-amount">₹0.00</div>
+                </div>
+                <div>
+                    <label class="label2">Total<p>/ person</p></label>
+                    <div class="total">₹0.00</div>
+                </div>
+                <div class="submit">
+                    <button class="generate">RESET</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
