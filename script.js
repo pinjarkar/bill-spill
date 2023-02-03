@@ -4,7 +4,7 @@ generateBill = document.querySelector(".generate")
 let addPeople = document.querySelector(".add-people");
 let removePeople = document.querySelector(".remove-people");
 let noOfPeople = document.querySelector(".people");
-let billAmount = 0
+let billAmount = 0   
 let people = 1
 
 addPeople.addEventListener("click", () => {
